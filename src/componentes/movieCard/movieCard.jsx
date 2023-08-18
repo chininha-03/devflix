@@ -1,11 +1,16 @@
+import { useState } from "react";
 import MovieDesc from "../movieDescription/movieDescription";
 import styles from "./movieCard.module.css";
 
 const MovieCard = ({ movies }) => {
   const movie = movies;
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const toogleModal = () => {
+    setIsModalOpen(!isModalOpen)
+  };
   return (
     <>
-    <div className={styles.movie}>
+    <div className={styles.movie} onClick={toogleModal}>
       <div>
         <p>{movie.Year}</p>
       </div>
@@ -24,7 +29,7 @@ const MovieCard = ({ movies }) => {
         <h3>{movie.Title}</h3>
       </div>
     </div>
-    <MovieDesc movies={movie} />
+    {isModalOpen && <MovieDesc movies={movie} click={toogleModal} />}
     </>
   );
 };
