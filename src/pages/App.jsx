@@ -2,10 +2,12 @@ import { useEffect } from "react";
 import { useState } from "react";
 
 import "./App.css";
-import MovieCard from "../componentes/movieCard/movieCard";
-
 import logo from "../assets/devflix.png";
+
+import MovieCard from "../componentes/movieCard/movieCard";
 import searchIcon from "../assets/search.svg";
+import Footer from "../componentes/footer/footer";
+
 
 
 const App = () => {
@@ -65,6 +67,8 @@ const App = () => {
             <h2>Nenhum filme encocntrado 😥</h2>
           </div>
           )}
+          
+          <Footer link={"https://github.com"}>Otávio</Footer>
       </div>
     </>
   );

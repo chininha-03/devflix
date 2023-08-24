@@ -1,115 +1,129 @@
-.modalBackdrop{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.1);
-    z-index: 999;
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 999;
 
-    animation: fadeIn 0.3s ease-in-out forwards;
+  animation: fadeIn 0.3s ease-in-out forwards;
 }
 
-.movieModal{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 850px;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-    background: #000;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    color: #fff;
-    max-height: 100vh;
+.movieModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 850px;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  background: #000;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  color: #fff;
+  max-height: 100vh;
 
-    animation: fadeIn 0.3s ease-in-out forwards;
+  animation: fadeIn 0.3s ease-in-out forwards;
 }
 
-.movieInfo{
-    width: 100%;
-    border-radius: inherit;
-    background: #000;
-    position: relative;
+.movieInfo {
+  width: 100%;
+  border-radius: inherit;
+  background: #000;
+  position: relative;
 }
 
-.movieInfo img{
-    position: relative;
-    width: 100%;
-    height: 480px;
-    object-fit: cover;
-    object-position: top;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px ;
+.movieInfo img {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  object-position: top;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-.btnClose{
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 1rem;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background: #181818;
-    color: rgb(138, 7, 7);
-    cursor: pointer;
+.btnClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #181818;
+  color: rgb(138, 7, 7);
+  cursor: pointer;
 }
 
-.movieType{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 30%;
-    background: linear-gradient(#ffffff00, #000);
+.movieType {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(#ffffff00, #000);
 }
 
-.movieType div:nth-of-type(1){
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-    color: #fff;
-    text-transform: uppercase;
-
+.movieType div:nth-of-type(1) {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  color: #fff;
+  text-transform: uppercase;
 }
 
-.movieType div:nth-of-type(1) img{
-    width: 5%;
-    height: 5%;
-    border-radius: 0;
-    
+.movieType div:nth-of-type(1) img {
+  width: 5%;
+  height: 5%;
+  border-radius: 0;
 }
 
 .movieType a {
-    margin-top: 1rem;
-    padding: 0.2em 0.7em;
-    background: #fff;
-    border-radius: 0.4em;
-    text-decoration: none;
-    font-weight: bolder;
+  margin-top: 1rem;
+  padding: 0.2em 0.7em;
+  background: #fff;
+  border-radius: 0.4em;
+  text-decoration: none;
+  font-weight: bolder;
 }
 
-.containerMisc{
-    display: flex;
-    padding: 2em 2em 1em;
-    font-size: 14px;
+.containerMisc {
+  display: flex;
+  padding: 3em 2em 1em;
+  /* font-size: 14px; */
 }
 
-.containerFlex{
-    flex: 1;
+.containerFlex {
+  flex: 1;
 }
 
-.desc{
-    padding: 0 2em 2em;
-    text-align: justify;
-    font-size: 14px;
+.desc {
+  padding: 0 2em 2em;
+  text-align: justify;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .movieModal {
+    width: 550px;
+  }
+}
+
+@media (max-width: 430px) {
+  .movieModal {
+    width: 320px;
+    margin-top: 2em;
+  }
+  .desc {
+    padding-bottom: 3.5em;
+  }
 }
 
 @keyframes fadeIn {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1  ;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
