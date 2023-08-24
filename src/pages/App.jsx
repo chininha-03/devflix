@@ -14,7 +14,7 @@ const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const[movies, setMovies] = useState ([])
 
-  const apiKey = "e4d577fa"; // https://omdbapi.com/?apikey=e4d577fa&s=Batman
+  const apiKey = "c5fb8a3d"; // https://omdbapi.com/?apikey=e4d577fa&s=Batman
   const apiUrl = `https://omdbapi.com/?apikey=${apiKey}`;
 
   //   fetch(apiUrl)
