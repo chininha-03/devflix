@@ -6,6 +6,8 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.1);
     z-index: 999;
+
+    animation: fadeIn 0.3s ease-in-out forwards;
 }
 
 .movieModal{
@@ -20,6 +22,8 @@
     z-index: 1000;
     color: #fff;
     max-height: 100vh;
+
+    animation: fadeIn 0.3s ease-in-out forwards;
 }
 
 .movieInfo{
@@ -35,6 +39,8 @@
     height: 480px;
     object-fit: cover;
     object-position: top;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px ;
 }
 
 .btnClose{
@@ -64,6 +70,7 @@
     left: 2rem;
     color: #fff;
     text-transform: uppercase;
+
 }
 
 .movieType div:nth-of-type(1) img{
@@ -71,4 +78,38 @@
     height: 5%;
     border-radius: 0;
     
+}
+
+.movieType a {
+    margin-top: 1rem;
+    padding: 0.2em 0.7em;
+    background: #fff;
+    border-radius: 0.4em;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.containerMisc{
+    display: flex;
+    padding: 2em 2em 1em;
+    font-size: 14px;
+}
+
+.containerFlex{
+    flex: 1;
+}
+
+.desc{
+    padding: 0 2em 2em;
+    text-align: justify;
+    font-size: 14px;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1  ;
+    }
 }
