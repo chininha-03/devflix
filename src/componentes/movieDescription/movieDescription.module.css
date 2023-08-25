@@ -97,27 +97,49 @@
   flex: 1;
 }
 
+
+
 .desc {
   padding: 0 2em 2em;
   text-align: justify;
   font-size: 14px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .movieModal {
     width: 550px;
   }
+
+  .containerMisc{
+    padding-top: 0;
+  }
 }
 
-@media (max-width: 430px) {
+/* Coisas para celular */
+@media screen and (max-width: 430px) {
   .movieModal {
     width: 320px;
     margin-top: 2em;
   }
+
+  .movieInfo img{
+    height: 220px;
+  }
+
+  .movieType h1{
+    font-size: 15pt;
+  }
+
+  .containerMisc{
+    padding-top: 6em;
+    display: block;
+  }
+
   .desc {
     padding-bottom: 3.5em;
   }
 }
+
 
 @keyframes fadeIn {
   from {
